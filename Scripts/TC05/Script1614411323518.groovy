@@ -15,3 +15,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('')
+try{
+WebUI.click(findTestObject(null))
+}catch(exception e){
+println e
+}
+
+WebUI.click(findTestObject(null))
+
+WebUI.click(findTestObject(null))
+
+WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
+
